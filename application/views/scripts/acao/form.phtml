@@ -1,9 +1,0 @@
-<div class="titulo">A&ccedil;&otilde;es</div>
-<form class="form" action="<?php echo $this->baseUrl("acao/form")?>" method="POST">
-    <div class="form_row"><label>Tipo de Ação:</label><input class="input validate[required] tipRight" type="text" style="width: 290px;" name="tipo_acao" placeholder="Entre com o Tipo de Ação" original-title="Entre com o Tipo da Ação" value="<?php echo $this->acao->tipo_acao ?>" /></div>
-    <div class="form_row"><label>Descrição:</label><textarea class="textarea" id="htmleditor" name="DESCRICAO"><?php echo $this->acao->DESCRICAO ?></textarea></div>
-    <div class="clear"></div><br />
-    <input name="ID_ACAO" type="hidden" value="<?php echo $this->acao->ID_ACAO?>">
-    <input type="submit" class="submit" value="Salvar" />
-    <a style="height:27px;"  href="<?php echo $this->baseUrl("acao/")?>" class="submit">Voltar</a>
-</form>

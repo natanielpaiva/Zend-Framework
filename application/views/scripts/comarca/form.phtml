@@ -1,9 +1,0 @@
-<div class="titulo">A&ccedil;&otilde;es</div>
-<form class="form" action="<?php echo $this->baseUrl("comarca/form")?>" method="POST">
-    <div class="form_row"><label>Código Comarca:</label><input class="input validate[required] tipRight" type="text" style="width: 290px;" name="CODIGO" placeholder="Entre com o Código da comarca" original-title="Entre com o código da comarca" value="<?php echo $this->comarca->CODIGO ?>" /></div>
-    <div class="form_row"><label>Descrição:</label><textarea class="textarea" id="htmleditor" name="DESCRICAO"><?php echo $this->comarca->DESCRICAO ?></textarea></div>
-    <input name="ID_COMARCA" type="hidden" value="<?php echo $this->comarca->ID_COMARCA?>">
-    <div class="clear"></div><br />
-    <input type="submit" class="submit" value="Salvar" />
-    <a style="height:27px;"  href="<?php echo $this->baseUrl("comarca/")?>" class="submit">Voltar</a>
-</form>
