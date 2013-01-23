@@ -1,0 +1,9 @@
+<div class="titulo">A&ccedil;&otilde;es</div>
+<form class="form" action="<?php echo $this->baseUrl("vara/form")?>" method="POST">
+    <div class="form_row"><label>Comarca:</label><?php echo $this->formSelect("ID_COMARCA", $this->vara->ID_VARA, array( "class" => "input validate[required] tipRight", "style" => "width:290px" ), $this->comarcas)?></div>
+    <div class="form_row"><label>Descrição:</label><textarea class="textarea" id="htmleditor" name="DESCRICAO"><?php echo $this->vara->DESCRICAO ?></textarea></div>
+    <input name="ID_VARA" type="hidden" value="<?php echo $this->vara->ID_VARA?>">
+    <div class="clear"></div><br />
+    <input type="submit" class="submit" value="Salvar" />
+    <a style="height:27px;"  href="<?php echo $this->baseUrl("vara/")?>" class="submit">Voltar</a>
+</form>

@@ -1,0 +1,27 @@
+<div class="titulo">Varas</div>
+<div id="tabela">
+    <div><a href="<?php echo $this->baseUrl("vara/form") ?>"><input type="button" value="INCLUIR"/></a></div>
+    <table class="dataTable" width="100%">
+         <thead>
+            <tr>
+            <th>Código Comarca</th>
+            <th>Descri&ccedil;&atilde;o</th>
+            <th>Ativo</th>
+            <th>A&ccedil;&atilde;o</th>
+            </tr>
+    </thead>
+    <tbody>
+            <?php foreach ($this->vara as $vara): ?>
+            <tr>
+            <td><?php echo $vara['codigo_comarca']?></td>
+            <td><?php echo $vara['DESCRICAO']?></td>
+            <td><?php if($vara['ST_ATIVO'] == 1) echo "SIM"; else echo "NÃO"; ?></td>
+            <td style="text-align:center;">
+                <a href="<?php echo $this->baseUrl("vara/form/ID_VARA/{$vara['ID_VARA']}")?>"><input type="button" value="Alterar"/></a>
+                <a href="<?php echo $this->baseUrl("vara/deletar/ID_VARA/{$vara['ID_VARA']}")?>"><input class="excluir" type="button" value="Excluir"/></a>
+            </td>
+            </tr>
+            <?php endforeach; ?>
+    </tbody>
+    </table>
+</div>

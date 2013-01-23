@@ -1,0 +1,19 @@
+*{margin: 0; padding: 0;}
+
+body {font: 75% "Trebuchet MS", Arial, Helvetica, sans-serif; text-align: center; background-color: #6B94A9;}
+
+div#geral {border: 1px solid; margin: 0 auto; margin-top: 12%; text-align: left; width: 40em; height: 26em; background: #fff; border-radius: 10px; -webkit-border-radius:10px; -moz-border-radius:10px;}
+
+div#topo {font-size: 1.3em; font-weight: bold; color:#6B94A9;  height: 10em;  text-align: center; }
+    div#topo img {margin: 5px; float: left;}
+    div#topo span {font-size: 2em; line-height: 2.5em;}
+    
+    
+div#linha {width: 25em; margin: 0 auto; text-align: center; color: #6B94A9; font-size: 1.4em;}    
+
+div#formulario {width: 30em; margin: 0 auto; padding: 1em; text-align: center;}
+    .intputTxt {border: 1px solid #ccc; padding: 0.1em; margin-bottom: 0.5em; width: 200px;}
+        .submitLoguin{width: 4em; height: 1.4em; background: url(../images/btnLogin.png) no-repeat; border: none; cursor: pointer; margin: 10px 40px 0 40px;}
+        .submitEsqueci{width: 8em; height: 1.4em; background: url(../images/btnEsqueciSenha.png) no-repeat; border: none; cursor: pointer;}
+        
+div#senhaNova div{padding: 10px;}

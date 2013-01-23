@@ -1,0 +1,27 @@
+<div class="titulo">A&ccedil;&otilde;es</div>
+<div id="tabela">
+    <div><a href="<?php echo $this->baseUrl("acao/form") ?>"><input type="button" value="INCLUIR"/></a></div>
+    <table class="dataTable" width="100%">
+         <thead>
+            <tr>
+            <th>Tipo da A&ccedil;&atilde;o</th>
+            <th>Descri&ccedil;&atilde;o</th>
+            <th>Ativo</th>
+            <th>A&ccedil;&atilde;o</th>
+            </tr>
+    </thead>
+    <tbody>
+            <?php foreach ($this->acao as $acao): ?>
+            <tr>
+            <td><?php echo $acao['tipo_acao']?></td>
+            <td><?php echo $acao['DESCRICAO']?></td>
+            <td><?php if($acao['ST_ATIVO'] == 1) echo "SIM"; else echo "NÃO"; ?></td>
+            <td style="text-align:center;">
+                <a href="<?php echo $this->baseUrl("acao/form/ID_ACAO/{$acao['ID_ACAO']}")?>"><input type="button" value="Alterar"/></a>
+                <a href="<?php echo $this->baseUrl("acao/deletar/ID_ACAO/{$acao['ID_ACAO']}")?>"><input class="excluir" type="button" value="Excluir"/></a>
+            </td>
+            </tr>
+            <?php endforeach; ?>
+    </tbody>
+    </table>
+</div>
